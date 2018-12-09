@@ -1,20 +1,20 @@
 # imt-website
-imt website
 
-Run gunicorn as below:
+
+##Run gunicorn as below:
 gunicorn --bind 0.0.0.0:8000 wsgi &
 
-Nginx settings:
+##Nginx settings:
 
 server {
     listen       80;
-#    listen       somename:8080;
+##    listen       somename:8080;
     server_name imteyaz.com;
 
-   # location / {
-   #     root   /var/www/html/imteyaz;
-   #     index  index.html index.htm;
-   # }
+   ## location / {
+   ##     root   /var/www/html/imteyaz;
+   ##     index  index.html index.htm;
+   ## }
     location / {
 
              proxy_pass         http://172.104.216.83:8000;
