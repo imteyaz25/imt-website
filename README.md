@@ -2,7 +2,7 @@
 
 
 ## Run gunicorn as below:
-gunicorn --bind 0.0.0.0:8000 wsgi &
+<pre>gunicorn --bind 0.0.0.0:8000 wsgi & </pre>
 
 ## Nginx settings:
 <pre>
