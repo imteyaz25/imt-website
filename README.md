@@ -5,7 +5,7 @@
 gunicorn --bind 0.0.0.0:8000 wsgi &
 
 ## Nginx settings:
-
+<pre>
 server {
     listen       80;
 
@@ -22,3 +22,4 @@ server {
 
     }
 }
+</pre>
